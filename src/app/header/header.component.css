@@ -1,0 +1,9 @@
+.headline {
+  margin: 0;
+}
+.headline-pre {
+  margin-top: 1em;
+}
+.headline-super {
+  font-size: 600%;
+}

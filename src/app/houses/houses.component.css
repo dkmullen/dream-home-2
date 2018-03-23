@@ -1,0 +1,25 @@
+.house-container {
+  margin-bottom: 100px;
+}
+.button-container {
+  display: block;
+}
+input {
+  position: absolute;
+  opacity: 1;
+}
+.new-radio {
+
+  margin-top: 10px;
+  margin-left: -5px;
+  height: 30px;
+  width: 30px;
+  background-color: rgb(148, 152, 160);
+  border-radius: 50%;
+}
+.new-radio:hover {
+  background-color: #ccc;
+}
+.new-radio:checked {
+  background-color: #2196F3;
+}
