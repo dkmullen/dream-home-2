@@ -6,4 +6,13 @@
 }
 .headline-super {
   font-size: 600%;
+  margin-bottom: 50px;
+}
+ul {
+  margin-left: -25px;
+}
+li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 5px;
 }

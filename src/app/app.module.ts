@@ -9,7 +9,15 @@ import { HouseSizeComponent } from './house-size/house-size.component';
 import { HouseEssayComponent } from './house-essay/house-essay.component';
 import { HouseDetailsComponent } from './house-details/house-details.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
+import { Routes, RouterModule } from '@angular/router';
 
+
+// define my routes
+const appRoutes: Routes = [
+  { path: '', component: HouseSizeComponent },
+  { path: 'essay', component: HouseEssayComponent },
+  { path: 'details', component: HouseDetailsComponent }
+]
 
 @NgModule({
   declarations: [
@@ -22,7 +30,9 @@ import { SignUpComponent } from './sign-up/sign-up.component';
     SignUpComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot(appRoutes) // register routes with angular
+
   ],
   providers: [],
   bootstrap: [AppComponent]
