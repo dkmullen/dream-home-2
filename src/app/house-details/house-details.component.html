@@ -1,3 +1,51 @@
-<p>
-  house-details works!
-</p>
+
+<div id="details-container">
+  <form>
+    <div class="form-group box" id="slider-box">
+      <label for="exampleInputEmail1">Price</label>
+      <div class="slidecontainer">
+        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+      </div>    
+    </div>
+    <div class="form-group box" id="location-box">
+      <label for="location">Location</label>
+      <input type="text" class="form-control" id="location" placeholder="Enter a city and state">
+    </div>
+  
+    <div class="form-group box" id="status-box">
+      <label>Status:</label>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox">Dreaming: A year or more from buying
+        </label>
+      </div>
+
+      <div class="checkbox">
+        <label>
+          <input type="checkbox"> Getting serious: 180 - 365 days from buying
+        </label>
+      </div>
+
+      <div class="checkbox">
+        <label>
+          <input type="checkbox"> Packing up: Buying in 90 - 160 days
+        </label>
+      </div>
+
+      <div class="checkbox">
+        <label>
+          <input type="checkbox"> Time to go: Ready to buy!
+        </label>
+      </div>
+    </div>
+    
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+
+  <hr>
+
+  <button type="button" class="btn btn-warning" (click)="onButtonClick">Home</button>
+  <!-- onButtonClick, above, currently calls a method in the component which simply
+    redirects to / - a demo, not really needed at the moment, of how to redirect
+    after running some operations -->
+</div>

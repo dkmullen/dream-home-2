@@ -1,10 +1,17 @@
-<img src="../../assets/images/logo-250.png"/>
+<!--<img src="assets/images/logo-250.png"/>-->
 <h1 class="headline headline-pre">{{pre[0]}}</h1>
 <h1 class="headline headline-super">DREAM</h1>
 <ul>
-  <li><a href="#">Home</a></li>
-  <li><a href="/essay">Essay</a></li>
-  <li><a href="/details">Details</a></li>
-
+  <li routerLinkActive="active"
+      [routerLinkActiveOptions]="{exact: true}">
+      <a routerLink="/">Home</a></li>
+  <li routerLinkActive="active"><a routerLink="/essay">Essay</a></li>
+  <li routerLinkActive="active"><a routerLink="/details">Details</a></li>
 </ul>
 
+<!-- routerLinkActive is an angular handle to designate
+  the active link, which then selected by a CSS rule.
+  Then, routerLinkActiveOptions exact=true keeps the '/'
+  from always being selected, since the '/' is part of
+  every pathname.
+-->

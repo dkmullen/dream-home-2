@@ -6,13 +6,20 @@
 }
 .headline-super {
   font-size: 600%;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
 ul {
   margin-left: -25px;
+  margin-bottom: 70px;
 }
 li {
   list-style: none;
   display: inline-block;
   margin: 0 5px;
+}
+a {
+  text-decoration: none;
+}
+.active {
+  border-bottom: 1px solid black;
 }
