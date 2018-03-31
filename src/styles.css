@@ -12,3 +12,12 @@ h1 {
   font-size: 200%;
   font-weight: 100;
 }
+
+.narrow-container {
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+input.ng-invalid.ng-touched {
+  border: 1px solid red;
+}

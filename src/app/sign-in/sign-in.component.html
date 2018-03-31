@@ -1,0 +1,40 @@
+
+<div class="narrow-container" id="signin-container">
+    <!-- Here's how to bind the form to onSubmit (w/c is my func in the controller)
+     f is the local ref to the form -->
+    <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+      <div class="form-group box">
+        <label for="email">Email</label>
+        <input 
+          type="email" 
+          class="form-control" 
+          id="email" 
+          placeholder="Email" 
+          ngModel 
+          name="email"
+          required
+          email>
+      </div>
+      <div class="form-group box">
+          <label for="password">Password</label>
+          <input 
+            type="password" 
+            class="form-control" 
+            id="password" 
+            placeholder="Password" 
+            ngModel 
+            name="password"
+            required
+            minlength="5">
+        </div>
+      <button 
+        type="submit" 
+        class="btn btn-success"
+        [disabled]="!f.valid">Sign In</button>
+      <button 
+        type="button" 
+        class="btn btn-info"
+        (click)="onButtonClick()">Or Sign Up</button>
+    </form>
+  </div>
+  

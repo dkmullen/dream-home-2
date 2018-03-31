@@ -1,3 +1,62 @@
-<p>
-  sign-up works!
-</p>
+<div class="narrow-container" id="signup-container">
+    <!-- Here's how to bind the form to onSubmit (w/c is my func in the controller)
+     f is the local ref to the form -->
+    <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+      <div class="form-group box">
+        <label for="name">Name</label>
+        <input 
+          type="name" 
+          class="form-control" 
+          id="name" 
+          placeholder="Name" 
+          ngModel 
+          name="name"
+          required>
+      </div>
+      <div class="form-group box">
+          <label for="email">Email</label>
+          <input 
+            type="email" 
+            class="form-control" 
+            id="email" 
+            placeholder="Email" 
+            ngModel 
+            name="email"
+            required
+            email>
+        </div>
+      <div class="form-group box">
+          <label for="password">Password</label>
+          <input 
+            type="password" 
+            class="form-control" 
+            id="password" 
+            placeholder="Password" 
+            ngModel 
+            name="password"
+            required
+            minlength="5">
+        </div>
+        <div class="form-group box">
+          <label for="password-match">Retype Password</label>
+          <input 
+            type="password-match" 
+            class="form-control" 
+            id="password-match" 
+            placeholder="Retype Password" 
+            ngModel 
+            name="password-match"
+            required
+            minlength="5">
+        </div>
+      <button 
+        type="submit" 
+        class="btn btn-success"
+        [disabled]="!f.valid">Sign Up</button>
+      <button 
+        type="button" 
+        class="btn btn-info"
+        (click)="onButtonClick()">Or Sign In</button>
+    </form>
+  </div>
+  

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { NgForm } from '@angular/forms';
 
 
 @Component({
@@ -25,6 +26,10 @@ export class HouseDetailsComponent implements OnInit {
     // for relative routes this.router.navigate(['whatevs'], {relativeTo: this.route});
     // Be sure to import ActivatedRoute from @angular/router and inject
     // private route: ActivatedRoute in the constructor
+  }
+
+  onSubmit(form: NgForm) {
+    console.log(form);
   }
 
 }
