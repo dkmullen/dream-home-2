@@ -2,6 +2,10 @@
   margin: 5% 0 5% 0;
 }
 
+.img-responsive {
+  margin: 0 auto;
+}
+
 /*
 .button-container {
   display: block;

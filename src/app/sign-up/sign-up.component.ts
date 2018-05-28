@@ -17,4 +17,8 @@ export class SignUpComponent implements OnInit {
     this.router.navigate(['/signin']);
   }
 
+  onSubmit() {
+    console.log('Gonna write some code here soon');
+  }
+
 }
