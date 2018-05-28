@@ -23,3 +23,9 @@ a {
 .active {
   border-bottom: 1px solid black;
 }
+
+@media screen and (max-width: 500px) {
+  .headline-super {
+    font-size: 400%;
+  }
+}

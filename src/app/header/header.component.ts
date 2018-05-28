@@ -11,11 +11,16 @@ export class HeaderComponent implements OnInit {
     'Tell us your',
     'Fill in the details of your',
     'Sign up and save your'
-  ]
+  ];
+  premessage: string = this.pre[0];
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  setPre(n) {
+    this.premessage = this.pre[n];
   }
 
  

@@ -1,13 +1,13 @@
 <!--<img src="assets/images/logo-250.png"/>-->
-<h1 class="headline headline-pre">{{pre[0]}}</h1>
+<h1 class="headline headline-pre">{{premessage}}</h1>
 <h1 class="headline headline-super">DREAM</h1>
 <ul>
   <li routerLinkActive="active"
       [routerLinkActiveOptions]="{exact: true}">
-      <a routerLink="/">Home</a></li>
-  <li routerLinkActive="active"><a routerLink="/essay">Essay</a></li>
-  <li routerLinkActive="active"><a routerLink="/details">Details</a></li>
-  <li routerLinkActive="active"><a routerLink="/signin">Sign In</a></li>
+      <a (click)="setPre(0)" routerLink="/">Home</a></li>
+  <li routerLinkActive="active"><a (click)="setPre(1)" routerLink="/essay">Essay</a></li>
+  <li routerLinkActive="active"><a (click)="setPre(2)" routerLink="/details">Details</a></li>
+  <li routerLinkActive="active"><a (click)="setPre(3)" routerLink="/signin">Sign In</a></li>
 </ul>
 
 <!-- routerLinkActive is an angular handle to designate
