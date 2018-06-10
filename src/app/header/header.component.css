@@ -28,4 +28,7 @@ a {
   .headline-super {
     font-size: 400%;
   }
+  .headline-pre {
+    font-size: 140%;
+  }
 }

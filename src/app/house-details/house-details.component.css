@@ -31,3 +31,9 @@
   text-align: left;
   margin-bottom: 35px;
 }
+
+@media screen and (max-width: 500px) {
+  #essay {
+      max-width: 90%;
+  }
+}

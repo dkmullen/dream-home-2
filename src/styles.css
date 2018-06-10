@@ -8,6 +8,7 @@ body {
   font-weight: 300;
   font-size: 180%;
 }
+
 h1 {
   font-size: 200%;
   font-weight: 100;
@@ -20,4 +21,10 @@ h1 {
 
 input.ng-invalid.ng-touched {
   border: 1px solid red;
+}
+
+@media screen and (max-width: 500px) {
+  .narrow-container {
+      max-width: 90%;
+  }
 }

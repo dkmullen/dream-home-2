@@ -1,0 +1,9 @@
+#essay {
+    padding: 10px;
+
+}
+@media screen and (max-width: 500px) {
+    #essay {
+        max-width: 90%;
+    }
+}
